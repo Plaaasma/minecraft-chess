@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chess:block/chess_board",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "chess:block/chess_board",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chess:block/chess_board",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chess:block/chess_board",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "chess",
+	"version": "${version}",
+	"name": "Chess for Minecraft",
+	"description": "Chess brought to Minecraft!",
+	"authors": [
+		"Plaaasma"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/chess/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.nerdorg.chess.ChessForMinecraft"
+		],
+		"client": [
+			"net.nerdorg.chess.ChessForMinecraftClient"
+		],
+		"fabric-datagen": [
+          "net.nerdorg.chess.ChessForMinecraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"chess.mixins.json",
+		{
+			"config": "chess.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
